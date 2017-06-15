@@ -2,13 +2,17 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
   <title>WDI Project</title>
 </head>
+
 <body>
+
   <div class="container">
     <div id='header'><h2><p>MISSILE COMMAND</p>TIC TAC TOE</h2></div>
     <div class="aside">
-      <div class="displayPlayer">Current Player:<span>X</span></div>
+      <img src="images/coin.gif" title="Insert Coin to play again" alt="Reset Coin"/>
+      <div class="displayPlayer">Current Player: <span>X</span></div>
     </div>
     <div class="winner"></div>
     <div id="grid">
@@ -22,11 +26,8 @@
       <div class="box" id="box7"></div>
       <div class="box" id="box8"></div>
     </div>
-
-
   </div>
 
-<div class='clear'></div>
 <script src="game.js"></script>
 </body>
 </html>
