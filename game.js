@@ -1,7 +1,8 @@
 var player1 = "X";
 var player2 = "O";
+var boxes = document.querySelectorAll('.box');
 var currentPlayer = player1;
-// var displayPlayer = document.querySelector('span').textContent;
+var displayPlayer = document.querySelector('span');
 var gridArray = [0,0,0,0,0,0,0,0,0]; // change element to X / O
 
 var switchPlayer = function () {
@@ -10,12 +11,21 @@ var switchPlayer = function () {
   } else if (currentPlayer === player2) {
     currentPlayer = player1;
   }
+  displayPlayer.textContent = currentPlayer;
+};
+
+var boardReset = function() {
+  gridArray = [0,0,0,0,0,0,0,0,0];
+  winner.textContent = "";
+  for (i=0; i<boxes.length; i++) {
+    boxes[i] = boxes[i].textContent = ""
+  }
+  if (currentPlayer === player2) {
+    displayPlayer.textContent = player1;
+  }
 };
 
 
-
-// keep track of Current Player for display ie. if currentPlayer === player1 (true) display player 1 turn
-// else display Player 2 turn 
 
 var boxChange = function() {
   if (event.target.textContent === "") {
@@ -96,4 +106,3 @@ grid.addEventListener('click', function(event) {
     boxChange(event);
   }
 });
-

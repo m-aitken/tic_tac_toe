@@ -46,7 +46,7 @@ body {
   width: 200px;
   height: 200px;
   margin: 2px 1px;
-  border: 2px solid green;
+  border: 5px solid green;
   display: inline-block;
   vertical-align: top;
   padding: 70px;
