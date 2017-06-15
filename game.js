@@ -37,12 +37,23 @@ var boxChange = function() {
   gridArray[targetInd] = currentPlayer;
   winCheck();
   switchPlayer();
+  fullBoard();
 };
 
-// event.target.id.slice(-1)
-// returns box #
-// store box # in variable
-// array index # of box # = currentPlayer 
+// full board "try again?"
+
+var fullBoard = function() {
+var fullArray = [];
+  for (i=0; i<gridArray.length; i++) {
+    if (gridArray[i] === "X" || gridArray[i] === "O") {
+      fullArray.push(gridArray[i]);
+    };
+    if (fullArray.length === 9) {
+      winner.textContent = "Another Game?";
+    };
+  };
+  fullArray = [];
+};
 
 
 var winner = document.querySelector('.winner');
