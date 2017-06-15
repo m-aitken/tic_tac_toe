@@ -49,7 +49,7 @@ body {
 }
 
 .aside {
-  text-align: center;
+  text-align: right;
 }
 
 img {
@@ -72,7 +72,6 @@ img {
   font-size: 80px;
   color: white;
   position: fixed;
-  /*margin: 170px;*/
   margin-left: 250px;
 }
 

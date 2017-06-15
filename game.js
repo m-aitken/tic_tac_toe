@@ -25,14 +25,10 @@ var boardReset = function() {
   }
 };
 
-
-
 var boxChange = function() {
   if (event.target.textContent === "") {
   event.target.textContent = currentPlayer;
   }
-  // console.log(event.target.id);
-  // console.log(event.target.id.slice(-1));
   var targetInd = event.target.id.slice(-1);
   gridArray[targetInd] = currentPlayer;
   winCheck();
@@ -40,7 +36,7 @@ var boxChange = function() {
   fullBoard();
 };
 
-// full board/tied game  "try again?"
+// full board/tied game  "start new game?"
 
 var fullBoard = function() {
 var fullArray = [];
@@ -49,7 +45,7 @@ var fullArray = [];
       fullArray.push(gridArray[i]);
     };
     if (fullArray.length === 9) {
-      winner.textContent = "Another Game?";
+      winner.textContent = "Start new game?"; // change out for game over image
     };
   };
   fullArray = [];
@@ -58,6 +54,8 @@ var fullArray = [];
 
 var winner = document.querySelector('.winner');
 var winCheck = function () {
+// workings for clearer win conditions + game over image
+
 // if (i=0; i<gridArray.length; i++)
 //   gridArray[i]
 
@@ -98,13 +96,12 @@ var winCheck = function () {
 };
 
 var coin = document.querySelector('img');
-
 coin.addEventListener('click', boardReset);
 
 var grid = document.querySelector('#grid');
-
 grid.addEventListener('click', function(event) {
   if (event.target.className === 'box') {
     boxChange(event);
+
   }
 });
