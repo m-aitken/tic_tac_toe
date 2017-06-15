@@ -45,7 +45,7 @@ body {
   /*display: inline-block;*/
   width: 200px;
   height: 200px;
-  margin: 2px 2px;
+  margin: 2px 1px;
   border: 2px solid green;
   display: inline-block;
   vertical-align: top;
@@ -65,3 +65,15 @@ body {
   color: white;
   font-size: 50px;
 }
+
+.winner {
+/*  height: 100px;
+  width: 100px;*/
+  border: 1px solid red;
+  /*display: inline;*/
+  font-size: 80px;
+  color: white;
+  position: fixed;
+  margin: 170px;
+}
+
