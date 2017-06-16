@@ -108,6 +108,5 @@ var grid = document.querySelector('#grid');
 grid.addEventListener('click', function(event) {  // listen for click in game grid, on a box class target, 
   if (event.target.className === 'box') {         // call player maker function
     boxChange(event);
-
   }
 });

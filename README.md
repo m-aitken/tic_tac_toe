@@ -9,15 +9,15 @@ As part of GA's Web Development Immersive course, the first project deliverable 
 # Requirements
 
 * The game must be rendered in a browser
-* Logic to show player turn switching
-* Logic to show a player winning, and a visual display to show which player won
+* Code logic to show player turn switching
+* Code logic to show a player winning, and a visual display to show which player won
 * Separate HTML, CSS and JavaScript files
 
 ---
 
 # Game Instructions
 
-Two players take turns clicking in the grid, assigning a marker, with Player One beginning first.
+Two players take turns clicking in the grid to assign a marker, with Player One beginning first.
 
 * Player One marker: " Asteroid " 
 ![Asteroid](http://rs1104.pbsrc.com/albums/h329/zorq1/Spinning-asteroid-4.gif~c200)
@@ -32,6 +32,8 @@ To start a new game at any time, the user can click the 'coin' icon.
 
 ## Game Logic
 
+I've created a board of HTML Div's with an old arcade style monochrome green grid.
+Each time a player clicks on a grid box, the box contents are inserted into the game logic array, in matching array element# of the box id#.
  
 
 
@@ -42,6 +44,7 @@ To start a new game at any time, the user can click the 'coin' icon.
 
 ## Known Issues
 
-* Once a player has 'won' the game and the winner is displayed, users can continue to click empty grids and fill the board. The existing 'full board / tied game' prompt will then be displayed.
+* Once a player has 'won' the game and the winner is displayed, players can continue to click empty grids and fill the board. The 'full board / tied game' prompt will then be displayed.
+* Some instances where a player has won the game, yet alternate player can complete a line and 'win' the game.
 * Continued player clicks in a box will cause the current player to switch.
 * Continued player clicks in a box will insert additional images.
