@@ -44,19 +44,33 @@ body {
   vertical-align: top;
   padding: 70px;
   color: red;
-  font-size: 60px;
+  /*font-size: 60px;*/
+  font-size: 0px;
   font-weight: bold;
 }
 
-.aside {
-  text-align: right;
+img {
+  height: 80px;
+  width: 80px;
 }
 
-img {
-  float: left;
-  height: 50px;
-  width: 85px;
+.aside {
+  text-align: center;
 }
+
+#coin {
+  float: left;
+  height: 80px;
+  width: 110px;
+}
+
+.reset {
+  font-family: 'VT323', monospace;
+  font-size: 30px;
+  color: white;
+  float: left;
+}
+
 .displayPlayer {
   font-family: 'VT323', monospace;
   margin: 10px;

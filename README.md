@@ -18,8 +18,8 @@ As part of GA's Web Development Immersive course, the first project deliverable 
 # Game Instructions
 
 Two players take turns clicking in the grid, assigning a marker, with Player One beginning first.
-* Player One marker: " X "
-* Player Two marker: " O "
+* Player One marker: " Asteroid "
+* Player Two marker: " Rocket "
 
 The first player to successfully place 3 markers in a line, in any direction, wins the game. 
 If the game grid is filled with no winner, the game can be reset and started again by clicking the 'coin' icon to the left.
@@ -28,15 +28,16 @@ To reset the game at any time, a user can click the 'coin' icon.
 
 ## Game Logic
 
+ 
 
 
 ## Future Improvements
 
 * Simplify win condition code
-* Implement images for player markers, e.g. missiles, asteroids.
 * Implement image display for game end/player win condition (prompt to start new game) cover most of board.
 
 ## Known Issues
 
 * Once a player has 'won' the game and the winner is displayed, users can continue to click empty grids and fill the board. The existing 'full board / tied game' prompt will then be displayed.
-* Multiple player clicks in a box will cause the current player to switch.
+* Continued player clicks in a box will cause the current player to switch.
+* Continued player clicks in a box will insert additional images.

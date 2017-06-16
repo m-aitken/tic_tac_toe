@@ -31,9 +31,20 @@ var boxChange = function() {          // user action in grid box
   }
   var targetInd = event.target.id.slice(-1);  // find target box id
   gridArray[targetInd] = currentPlayer;       // apply box id to game array as marker value(X/O)
-  winCheck();                   // call win condition check
-  switchPlayer();               // switch player
-  fullBoard();                  // call full board check
+  winCheck();            // call win condition check
+  switchPlayer();        // switch player
+  fullBoard();           // call full board check
+  addImg()               // call add image function 
+};
+
+var addImg = function () {
+  var img = document.createElement("img");      // create image tag
+  event.target.appendChild(img)                 // append image tag to click target
+  if (event.target.textContent === "X") {               
+    img.setAttribute("src", "images/asteroid.gif"); // set image for player1 marker
+  } else if (event.target.textContent === "O") {
+    img.setAttribute("src", "images/rocket.gif");   // set image for player2 marker
+  }
 };
 
 var fullBoard = function() {            // tied game/full board check
