@@ -23,6 +23,7 @@ var boardReset = function() {       // reset board state
   if (currentPlayer === player2) {
     displayPlayer.textContent = player1;    // reset to player1
   }
+  currentPlayer = player1;
 };
 
 var boxChange = function() {          // user action in grid box
