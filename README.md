@@ -40,7 +40,7 @@ Where a combination of array element values(player marks) matches a winning comb
 ## Future Improvements
 
 * Simplify win condition code
-* Implement image display for game end/player win condition (prompt to start new game) cover most of board.
+* Implement image to be displayed for game end/player win ('prompt to start new game' & cover most of board) 
 
 ## Known Issues
 
