@@ -1,4 +1,4 @@
-## ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project #1: The Game
+## ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project #1: Create a 'Tic Tac Toe' game
 
 ## Overview
 
@@ -26,4 +26,17 @@ If the game grid is filled with no winner, the game can be reset and started aga
 
 To reset the game at any time, a user can click the 'coin' icon.
 
-## 
+## Game Logic
+
+
+
+## Future Improvements
+
+* Simplify win condition code
+* Implement images for player markers, e.g. missiles, asteroids.
+* Implement image display for game end/player win condition (prompt to start new game) cover most of board.
+
+## Known Issues
+
+* Once a player has 'won' the game and the winner is displayed, users can continue to click empty grids and fill the board. The existing 'full board / tied game' prompt will then be displayed.
+* Multiple player clicks in a box will cause the current player to switch.
