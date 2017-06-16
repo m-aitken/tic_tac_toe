@@ -33,8 +33,8 @@ To start a new game at any time, the user can click the 'coin' icon.
 ## Game Logic
 
 I've created a board of HTML Div's with an old arcade style monochrome green grid.
-Each time a player clicks on a grid box, the box contents are inserted into the game logic array, in matching array element# of the box id#.
- 
+Each time a player clicks and marks a grid box, the box contents are inserted into a game logic array, in matching array element # of the box id #.
+Where a combination of array element values(player marks) matches a winning combination, the game is won by that player. 
 
 
 ## Future Improvements
