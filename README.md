@@ -1,4 +1,4 @@
-## ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project #1: Create a 'Tic Tac Toe' game
+## ![GA Logo](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project #1: Create a 'Tic Tac Toe' game
 
 ## Overview
 
@@ -18,8 +18,8 @@ As part of GA's Web Development Immersive course, the first project deliverable 
 # Game Instructions
 
 Two players take turns clicking in the grid, assigning a marker, with Player One beginning first.
-* Player One marker: " Asteroid "
-* Player Two marker: " Rocket "
+* Player One marker: " Asteroid " ![Asteroid](http://rs1104.pbsrc.com/albums/h329/zorq1/Spinning-asteroid-4.gif~c200)
+* Player Two marker: " Rocket " ![Rocket](http://i1178.photobucket.com/albums/x380/fajarnurazizi/rocket.gif)
 
 The first player to successfully place 3 markers in a line, in any direction, wins the game. 
 If the game grid is filled with no winner, the game can be reset and started again by clicking the 'coin' icon to the left.
